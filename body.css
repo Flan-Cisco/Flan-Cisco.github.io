@@ -1,3 +1,7 @@
+#container {
+  background-image: url("assets/background.jpg");
+}
+
 .mostrar {
   animation: fadeIn 1.5s;
 }
