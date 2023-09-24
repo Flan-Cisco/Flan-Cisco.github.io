@@ -1,5 +1,7 @@
 #container {
   background-image: url("assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .mostrar {
@@ -15,14 +17,15 @@
 #bio {
   display: grid;
   grid-template-columns: 0.7fr 0.8fr 1.5fr;
-  grid-template-rows: 0.3fr 0.7fr 2.7fr;
+  grid-template-rows: 0.3fr 0.7fr 1fr 0.7fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "nombre nombre nombre"
     "photo links contact"
-    "biography biography biography";
+    "biography biography biography"
+    "about about about";
 }
 .nombre {
   grid-area: nombre;
@@ -76,10 +79,62 @@
   justify-items: center;
   align-items: center;
 }
+.about {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.3fr 0.7fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "titulo titulo titulo"
+    "header bootstrap body"; 
+  grid-area: about; 
+}
+
+.titulo {
+  grid-area: titulo;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.header {
+  grid-area: header;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.bootstrap {
+  grid-area: bootstrap;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.body {
+  grid-area: body;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
 #email {
   text-decoration: none;
   color: #212529;
 }
+
+
+.proyecto {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.4fr 1fr 0.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "titulo"
+    "descripcion"
+    "github"; 
+  grid-area: 1 / 1 / 5 / 4; 
+}
+.titulo { grid-area: titulo; }
+.descripcion { grid-area: descripcion; }
+.github { grid-area: github; }
 
 @keyframes fadeIn {
   0% {
