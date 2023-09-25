@@ -1,8 +1,11 @@
-#container {
+body, html {
+  height: 100%;
   background-image: url("assets/background.jpg");
-  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 .mostrar {
   animation: fadeIn 1.5s;
@@ -80,14 +83,14 @@
   align-items: center;
 }
 .about {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 0.3fr 0.7fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
     "titulo titulo titulo"
-    "header bootstrap body"; 
-  grid-area: about; 
+    "header bootstrap body";
+  grid-area: about;
 }
 
 .titulo {
@@ -120,21 +123,30 @@
   color: #212529;
 }
 
-
 .proyecto {
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 0.4fr 1fr 0.5fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
     "titulo"
     "descripcion"
-    "github"; 
-  grid-area: 1 / 1 / 5 / 4; 
+    "github";
+  grid-area: 1 / 1 / 5 / 4;
+  padding: 30px;
+  
+  justify-items: center;
 }
-.titulo { grid-area: titulo; }
-.descripcion { grid-area: descripcion; }
-.github { grid-area: github; }
+.titulo {
+  grid-area: titulo;
+}
+.descripcion {
+  grid-area: descripcion;
+  text-align: justify;
+}
+.github {
+  grid-area: github;
+}
 
 @keyframes fadeIn {
   0% {

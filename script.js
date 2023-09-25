@@ -32,9 +32,6 @@ function changeDisplay(elemento) {
     case 3:
       contenido = document.getElementById("contenedor-eyeTrack");
       break;
-    case 4:
-      contenido = document.getElementById("contenedor-busTrack");
-      break;
     default:
       break;
   }
