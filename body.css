@@ -17,6 +17,10 @@ body, html {
   height: 0px;
 }
 
+#video {
+  margin: 5% 30%;
+}
+
 #bio {
   display: grid;
   grid-template-columns: 0.7fr 0.8fr 1.5fr;
