@@ -144,8 +144,21 @@ body, html {
   grid-area: descripcion;
   text-align: justify;
 }
-.github {
-  grid-area: github;
+.enlacesLive {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "githubLive pageLive"; 
+  grid-area: github; 
+}
+.githubLive {
+  grid-area: githubLive;
+}
+.pageLive {
+  grid-area: pageLive;
+  margin-left: 30px;
 }
 
 @keyframes fadeIn {
